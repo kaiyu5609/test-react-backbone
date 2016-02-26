@@ -118,7 +118,7 @@ var CommentForm = React.createClass({
 		if(commentId){//修改comment
 			if(!this.pass(newComment)) return false;
 			_commentUpdate = root.commentList.get(commentId);
-			_commentUpdate.set(this.state);//保存修改
+			_commentUpdate.set(newComment);//保存修改
 			console.log("-----------------------(^_^)编辑成功！-----------------------");
 		}else{//新增comment
 			if(!this.pass(newComment)) return false;
